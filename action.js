@@ -13,15 +13,14 @@
 $( document ).ready(function() {
 
 var burMen = $(".fas.fa-bars");
+var closeMen = $(".close");
 
 burMen.click(function() {
-  $(".header-right ul").show();
+  $(".hamburger-menu").addClass("active");
   console.log("ciao");
 });
 
-
-
-
-
-
+closeMen.click(function() {
+$(".hamburger-menu").removeClass("active");
+});
 });
